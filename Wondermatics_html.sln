@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wondermatics_html", "Wondermatics_html\Wondermatics_html.csproj", "{75696300-99ED-4BFA-8EFF-6EFDC1812F88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75696300-99ED-4BFA-8EFF-6EFDC1812F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75696300-99ED-4BFA-8EFF-6EFDC1812F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75696300-99ED-4BFA-8EFF-6EFDC1812F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75696300-99ED-4BFA-8EFF-6EFDC1812F88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC588357-2359-42D8-94E7-4F423C3808FC}
+	EndGlobalSection
+EndGlobal
