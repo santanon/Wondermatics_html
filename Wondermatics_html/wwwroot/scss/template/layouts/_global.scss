@@ -1,0 +1,100 @@
+﻿.text-main {
+    font-size: 56px;
+    line-height: 72px;
+    color: $color-primary;
+}
+.text-desc{
+    font-size: 28px;
+    line-height: 42px;
+}
+.title-info {
+    font-size: 40px;
+    color: $color-primary;
+}
+
+.section {
+    margin-bottom: 7rem;
+
+    &--texthighlight {
+        text-align: center;
+    }
+
+    &--contentinfo {
+        .item {
+            margin-bottom: 5rem;
+
+            .text {
+
+                .sub-info {
+                    font-size: 32px;
+                    color: $color-secondary;
+                    margin-bottom: 2rem;
+                }
+
+                .desc-info {
+                    font-size: 24px;
+                    color: #000;
+                }
+
+                &__left {
+                    padding-right: 30px;
+                }
+
+                &__right {
+                    padding-left: 30px;
+                }
+            }
+
+            .image {
+                img {
+                    border-radius: 30px;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &--video {
+        .item-clip {
+            .media-clip {
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+                border-radius: 30px;
+            }
+
+            .text {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    &--content {
+        margin-top: 140px;
+        margin-bottom: 0;
+        padding: 140px 0;
+
+        .title--section {
+            font-size: 64px;
+            color: $color-primary;
+        }
+        .title-info{
+            color: #000;
+        }
+    }
+    &--product {
+        margin-top: 140px;
+        margin-bottom: 0;
+        padding: 140px 0;
+        .title--section {
+            font-size: 64px;
+            color: $color-primary;
+        }
+    }
+
+}
+
+
+

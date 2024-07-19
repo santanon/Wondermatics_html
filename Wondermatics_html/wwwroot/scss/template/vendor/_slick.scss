@@ -1,0 +1,43 @@
+﻿.banner-wrapper {
+    margin-bottom: 7rem;
+    .slide--banner{
+        .slide-item{
+            img{
+                width: 100%;
+                height: calc(100vh - 150px);
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .slick-dots{
+            bottom: 30px;
+            text-align: left;
+            left: 55px;
+
+            display: flex;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: max-content;
+                button{
+                    background-color: $color-secondary;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    &:before{
+                        content: '';
+                    }
+                }
+                &.slick-active{
+                    button{
+                        width: 30px;
+                        border-radius: 15px;
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
