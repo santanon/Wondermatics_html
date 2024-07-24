@@ -12,8 +12,10 @@
     
     @(await Component.InvokeAsync("HeaderPrimary"))
 
-    <main role="main" class="pb-3">
+    <main role="main" class="main-wrapper pb-3">
         @RenderBody()
+
+        <div class="backdrop hide"></div>
     </main>
 
     @(await Component.InvokeAsync("FooterPrimary"))

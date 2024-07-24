@@ -1,42 +1,85 @@
-﻿.card{
+﻿.card {
     border: none;
-    &--widget{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+
+    .card--item {
+        position: relative;
         border-radius: 30px;
-        height: 500px;
         overflow: hidden;
-        .card-image{
+
+        .card-image {
             width: 100%;
-            img{
+
+            img {
                 width: 100%;
                 max-width: 100%;
             }
         }
-        .card-body{
+
+        .card-body {
             padding: 1.5rem 1.5rem;
-            .name-body{
+
+            .name-body {
                 margin-bottom: 2rem;
-                .name{
-                    &__en{
+
+                .name {
+                    &__en {
                         font-size: 24px;
                     }
-                    &__th{
+
+                    &__th {
                         font-size: 20px;
                     }
                 }
             }
-            
-            .desc{
-                font-size: 20px;    
+
+            .desc {
+                font-size: 20px;
             }
         }
 
-        .card--front{}
-        .card--back{
+        .card--front {
+        }
+
+        .card--back {
             position: absolute;
-            top: 0;
+            top: 100%;
             width: 100%;
             height: 100%;
             background-color: white;
+
+            &.show {
+                top: 0;
+            }
+
+            .card-body {
+                height: 100%;
+
+                .name-body {
+                    margin-bottom: 1rem;
+                }
+
+                .desc-body {
+                    font-size: 20px;
+                    font-weight: $weight-light;
+                }
+
+                .btn {
+                    position: absolute;
+                    bottom: 30px;
+                }
+            }
         }
+    }
+
+    @media (max-width: 1199.98px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767.98px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

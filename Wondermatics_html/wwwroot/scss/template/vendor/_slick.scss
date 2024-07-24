@@ -1,8 +1,10 @@
 ﻿.banner-wrapper {
+    padding-top: 140px;
     margin-bottom: 7rem;
-    .slide--banner{
-        .slide-item{
-            img{
+
+    .slide--banner {
+        .slide-item {
+            img {
                 width: 100%;
                 height: calc(100vh - 150px);
                 object-fit: cover;
@@ -10,28 +12,32 @@
             }
         }
 
-        .slick-dots{
+        .slick-dots {
             bottom: 30px;
             text-align: left;
-            left: 55px;
-
+            left: 0;
             display: flex;
-            li{
+            padding-left: 50px;
+
+            li {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: max-content;
-                button{
+
+                button {
                     background-color: $color-secondary;
                     border-radius: 50%;
                     width: 15px;
                     height: 15px;
-                    &:before{
+
+                    &:before {
                         content: '';
                     }
                 }
-                &.slick-active{
-                    button{
+
+                &.slick-active {
+                    button {
                         width: 30px;
                         border-radius: 15px;
                         background-color: $color-primary;
@@ -39,5 +45,9 @@
                 }
             }
         }
+    }
+
+    @media (max-width: 767.98px) {
+        padding-top: 95px;
     }
 }
