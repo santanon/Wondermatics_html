@@ -20,7 +20,6 @@ $(document).ready(function () {
 
     });
 
-
     $('#about').click(function () {
         $('.submenu--wrapper').addClass('active')
     });
@@ -36,4 +35,30 @@ $(document).ready(function () {
         $(this).closest('.card--item').find('.card--back').removeClass('show');
     });
 
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 120) {
+            $('.gototop').css('display','flex');
+        } else {
+            $('.gototop').hide();
+        }
+    });
+    $('.gototop').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 100);
+    });
+
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('Hello Mobile');
+    } else {
+        console.log('Hello Desktop');
+    }
+
+
+    //if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //    // ทำอะไรบางอย่างถ้าเป็นอุปกรณ์พกพา
+    //    alert("คุณกำลังใช้อุปกรณ์พกพา");
+    //} else {
+    //    // ทำอะไรบางอย่างถ้าไม่ใช่อุปกรณ์พกพา
+    //    alert("คุณไม่ได้ใช้อุปกรณ์พกพา");
+    //}
 });

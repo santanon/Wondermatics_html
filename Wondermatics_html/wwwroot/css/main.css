@@ -175,7 +175,7 @@
     top: 0;
     padding-top: 150px;
     padding-left: 15px;
-    background-color: rgb(217, 217, 214);
+    background-color: rgba(217, 217, 214, 0.8);
   }
   .header--wrapper .menu-wrapper__md .menu--nav ul {
     margin: 0;
@@ -242,6 +242,11 @@
     top: 20px;
   }
 }
+@media (max-width: 1199.98px) {
+  .header--wrapper .menu-wrapper__md .menu--nav ul .list-menu:last-child {
+    display: none;
+  }
+}
 @media (max-width: 767.98px) {
   .header--wrapper {
     height: 95px;
@@ -251,9 +256,6 @@
   }
   .header--wrapper .menu-wrapper__md .hamburger-menu {
     top: 20px;
-  }
-  .header--wrapper .menu-wrapper__md .menu--nav ul .list-menu:last-child {
-    display: none;
   }
 }
 
@@ -364,10 +366,21 @@
   font-size: 28px;
   line-height: 42px;
 }
+@media (max-width: 767.98px) {
+  .text-desc {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
 
 .title-info {
   font-size: 40px;
   color: #003e51;
+}
+@media (max-width: 767.98px) {
+  .title-info {
+    font-size: 32px;
+  }
 }
 
 .section {
@@ -527,6 +540,9 @@
   }
 }
 @media (max-width: 767.98px) {
+  .section {
+    margin-bottom: 3rem;
+  }
   .section .title--section {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -556,6 +572,31 @@
   .section--contact .group--contact .list-contact li .link-tel {
     font-size: 20px;
     width: 100%;
+  }
+  .section--contentinfo .item {
+    margin-bottom: 4rem;
+  }
+  .section--contentinfo .item .text .title-info {
+    font-size: 28px;
+  }
+  .section--contentinfo .item .text .sub-info {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+  .section--contentinfo .item .text .desc-info {
+    font-size: 22px;
+  }
+  .section--contentinfo .item .text__left {
+    padding-right: 0;
+  }
+  .section--contentinfo .item .text__right {
+    padding-left: 0;
+  }
+  .section--contentinfo .item .image {
+    margin-bottom: 2rem;
+  }
+  .section--video .item-clip {
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -617,10 +658,55 @@
 .certificate--wrapper .gallery--certificate ul li:last-child {
   margin-right: 0;
 }
+@media (max-width: 767.98px) {
+  .certificate--wrapper .text-main {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
 @media (max-width: 575.98px) {
   .certificate--wrapper .gallery--certificate ul li {
     margin-right: 20px;
   }
+}
+
+.gototop {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  bottom: 100px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007fa4;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.gototop i {
+  font-size: 28px;
+  display: flex;
+}
+
+.chat--wrapper {
+  position: fixed;
+  z-index: 9;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chat--wrapper .listChat--line a {
+  text-decoration: none;
+}
+.chat--wrapper .listChat--line i {
+  display: flex;
+  font-size: 3rem;
+  color: #06c755;
 }
 
 .card {
@@ -669,6 +755,22 @@
 .card .card--item .card--back .card-body {
   height: 100%;
 }
+.card .card--item .card--back .card-body .content-body {
+  max-height: 80%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+.card .card--item .card--back .card-body .content-body::-webkit-scrollbar {
+  width: 8px;
+}
+.card .card--item .card--back .card-body .content-body::webkit-scrollbar-track {
+  background: #00ff21;
+}
+.card .card--item .card--back .card-body .content-body::-webkit-scrollbar-thumb {
+  background-color: #003e51;
+  border-radius: 6px;
+}
 .card .card--item .card--back .card-body .name-body {
   margin-bottom: 1rem;
 }
@@ -705,10 +807,11 @@
   border: 1px solid #003e51;
 }
 .btn .text {
-  font-size: 16px;
+  font-size: 18px;
 }
 .btn .icon i {
-  font-size: 22px;
+  font-size: 26px;
+  display: flex;
 }
 
 .banner-wrapper {
@@ -748,9 +851,18 @@
   border-radius: 15px;
   background-color: #003e51;
 }
+@media (max-width: 1199.98px) {
+  .banner-wrapper .slide--banner .slide-item img {
+    height: 350px;
+  }
+}
 @media (max-width: 767.98px) {
   .banner-wrapper {
+    margin-bottom: 3rem;
     padding-top: 95px;
+  }
+  .banner-wrapper .slide--banner .slide-item img {
+    height: 350px;
   }
 }
 
