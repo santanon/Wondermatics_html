@@ -13,15 +13,22 @@
 
 $(document).ready(function () {
 
+    $('#noti_Modal').modal('show');
+
     $('.hamburger-menu').on('click', function () {
         $('.bar').toggleClass('animate');
         $('.menu--nav').toggleClass('hide show');
         $('.backdrop').toggleClass('hide show');
-
     });
 
-    $('#about').click(function () {
-        $('.submenu--wrapper').addClass('active')
+    $('.menu-name').click(function () {
+        $('.submenu--wrapper').removeClass('active');
+        const menu_id = $(this).attr('id');
+        $('#' + menu_id + '_sub').addClass('active');
+
+
+
+
     });
 
     $('.icon-close').click(function () {
@@ -48,17 +55,15 @@ $(document).ready(function () {
 
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        console.log('Hello Mobile');
+
+        //console.log('Hello Mobile');
+        $('#tracking_menu').hide();
+
+
     } else {
-        console.log('Hello Desktop');
+
+        //console.log('Hello Desktop');
+        $('#tracking_menu').show();
     }
 
-
-    //if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    //    // ทำอะไรบางอย่างถ้าเป็นอุปกรณ์พกพา
-    //    alert("คุณกำลังใช้อุปกรณ์พกพา");
-    //} else {
-    //    // ทำอะไรบางอย่างถ้าไม่ใช่อุปกรณ์พกพา
-    //    alert("คุณไม่ได้ใช้อุปกรณ์พกพา");
-    //}
 });

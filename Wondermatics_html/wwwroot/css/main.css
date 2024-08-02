@@ -272,6 +272,23 @@
   width: 100%;
   padding: 20px;
 }
+.footer--wrapper .app-wraapper p {
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+}
+.footer--wrapper .app-wraapper ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.footer--wrapper .app-wraapper ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+.footer--wrapper .app-wraapper ul li:last-child {
+  margin-right: 0;
+}
 .footer--wrapper .logo {
   max-width: 250px;
 }
@@ -709,6 +726,34 @@
   color: #06c755;
 }
 
+.modal-custom .modal-dialog .modal-content {
+  position: relative;
+}
+.modal-custom .modal-dialog .modal-content .modal-header {
+  width: 40px;
+  height: 40px;
+  background-color: #003e51;
+  border-bottom: 0;
+  position: absolute;
+  top: -50px;
+  padding: 0;
+  right: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.modal-custom .modal-dialog .modal-content .modal-header i {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.modal-custom .modal-dialog .modal-content .modal-body .image-banner img {
+  width: 100%;
+}
+
 .card {
   border: none;
   display: grid;
@@ -824,6 +869,10 @@
   object-fit: cover;
   object-position: center;
 }
+.banner-wrapper .slide--banner .slide-item video {
+  width: 100%;
+  height: calc(100vh - 150px);
+}
 .banner-wrapper .slide--banner .slick-dots {
   bottom: 30px;
   text-align: left;
@@ -855,14 +904,14 @@
   .banner-wrapper .slide--banner .slide-item img {
     height: 350px;
   }
+  .banner-wrapper .slide--banner .slide-item video {
+    height: 350px;
+  }
 }
 @media (max-width: 767.98px) {
   .banner-wrapper {
     margin-bottom: 3rem;
     padding-top: 95px;
-  }
-  .banner-wrapper .slide--banner .slide-item img {
-    height: 350px;
   }
 }
 

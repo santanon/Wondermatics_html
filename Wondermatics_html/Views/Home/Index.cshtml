@@ -10,6 +10,11 @@
         <div class="slide-item">
             <img src="~/images/banner/banner-2.jpg" />
         </div>
+        <div class="slide-item">
+            <video controls="controls">
+                <source src="~/clip/video-demo-banner.mp4" type="video/mp4" />
+            </video>
+        </div>
     </div>
 
 </div>
@@ -56,9 +61,9 @@
             <div class="col-12 col-md-7 col-lg-8">
                 <div class="text text__right">
                     <div class="title-info fw-semibold">รับรองจากกรมขนส่งทางบก</div>
-                    <div class="sub-info fw-regular">News</div>
+                    <div class="sub-info fw-regular">Certificate</div>
                     <div class="desc-info fw-light">
-                        บริษัท วันเดอ มาติกส์ จำกัด ได้รับการรับรองจากกรมขนส่งทางบกเพื่อใช้ในการติดตั้งรถบรรทุกวัตถุอันตราย รถบรรทุกวัตถุอันตรายทุกคันต้องติดตั้งกล่อง GPS ภายในสินปีนี้
+                        <label>บริษัท วันเดอ มาติกส์ จำกัด</label> ได้รับการรับรองจากกรมขนส่งทางบกเพื่อใช้ในการติดตั้งรถบรรทุกวัตถุอันตราย รถบรรทุกวัตถุอันตรายทุกคันต้องติดตั้งกล่อง GPS ภายในสินปีนี้
                     </div>
                 </div>
             </div>
@@ -67,8 +72,8 @@
         <div class="row align-items-center item">
             <div class="col-12 col-md-7 col-lg-8">
                 <div class="text text__left">
-                    <div class="title-info fw-semibold">ผลิตภัณฑ์ใหม่</div>
-                    <div class="sub-info fw-regular">New Products</div>
+                    <div class="title-info fw-semibold">ผลิตภัณฑ์</div>
+                    <div class="sub-info fw-regular">Products</div>
                     <div class="desc-info fw-light">
                         กล่อง DVR Camera Box อุปกรณ์บันทึกภาพขณะขับขี่ยานพาหนะ ทำให้สามารถตรวจสอบพฤติกรรมการขับขี่ ตรวจสอบความปลอกภัยของยานหาพนะได้
                     </div>
@@ -81,7 +86,7 @@
             </div>
         </div>
 
-        <div class="row align-items-center item">
+       @*  <div class="row align-items-center item">
             <div class="col-12 col-md-5 col-lg-4">
                 <div class="image">
                     <img src="~/images/img-demo.png" alt="" />
@@ -96,7 +101,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> *@
     </div>
 </div>
 
@@ -105,10 +110,21 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="title-info fw-semibold mb-4">เสียงตอบรับจากลูกค้า</div>
+                <div class="title-info fw-semibold mb-4">ลูกค้าของเรา</div>
             </div>
         </div>
-        <div class="row">
+
+        <div class="logoCustomer--wrapper">
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
+
+
+        @* <div class="row">
             <div class="col-md-6">
                 <div class="item-clip">
                     <video class="media-clip" controls="controls">
@@ -125,10 +141,29 @@
                     <p class="text fw-regular">บริษัท เจริญโภคภัณฑ์อาหาร จำกัด</p>
                 </div>
             </div>
-        </div>
+        </div> *@
     </div>
 </div>
 
+
+
+<!-- Modal -->
+<div class="modal fade modal-custom" id="noti_Modal" tabindex="-1" aria-labelledby="noti_ModaLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" data-bs-dismiss="modal" aria-label="Close">
+
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="modal-body">
+                <div class="image-banner">
+                    <img src="~/images/banner/banner-demo-maintenace.jpg" alt="banner" />
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -137,4 +172,5 @@
     <link href="~/vendor/slick/slick.css" rel="stylesheet" />
     <link href="~/vendor/slick/slick-theme.css" rel="stylesheet" />
     <script src="~/js/slick.js"></script>
+
 }
