@@ -8,5 +8,9 @@ namespace Wondermatics_html.Controllers
         {
             return View();
         }
+        public IActionResult Formonline()
+        {
+            return View();
+        }
     }
 }

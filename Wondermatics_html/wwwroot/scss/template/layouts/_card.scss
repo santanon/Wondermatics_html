@@ -12,26 +12,36 @@
 
         .card-image {
             width: 100%;
+            position: relative;
 
             img {
                 width: 100%;
                 max-width: 100%;
             }
+
+            .icon-certifiticate {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
         }
 
         .card-body {
             padding: 1.5rem 1.5rem;
+            position: relative;
 
             .name-body {
                 margin-bottom: 2rem;
 
                 .name {
                     &__en {
-                        font-size: 24px;
+                        font-size: 1.375rem; //22
+                        line-height: 2rem; //32
                     }
 
                     &__th {
-                        font-size: 20px;
+                        font-size: 1.25rem; //20
+                        line-height: 1.625rem; //26
                     }
                 }
             }
@@ -41,8 +51,6 @@
             }
         }
 
-        .card--front {
-        }
 
         .card--back {
             position: absolute;
@@ -83,7 +91,8 @@
                 }
 
                 .desc-body {
-                    font-size: 20px;
+                    font-size: 1.25rem;//20
+                    line-height: 1.5rem;//24
                     font-weight: $weight-light;
                 }
 
@@ -97,6 +106,9 @@
 
     @media (max-width: 1199.98px) {
         grid-template-columns: repeat(2, 1fr);
+        .card--item{
+            //height: 510px;
+        }
     }
 
     @media (max-width: 767.98px) {

@@ -17,7 +17,6 @@
         }
     }
 
-
     .logo {
         max-width: 250px;
 
@@ -31,8 +30,6 @@
     }
 
     .menu-wrapper {
-
-
 
         &__xl {
             display: block;
@@ -127,16 +124,16 @@
                     position: absolute;
                     top: 40px;
                     right: 35px;
-                    width: 40px;
-                    height: 45px;
+                    width: 35px;
+                    height: 40px;
                     cursor: pointer;
 
 
                     .bar,
                     .bar:after,
                     .bar:before {
-                        width: 40px;
-                        height: 4px;
+                        width: 35px;
+                        height: 3px;
                     }
 
                     .bar {
@@ -162,6 +159,7 @@
                             background: rgba(255, 255, 255, 0);
 
                             &:after {
+                                width: 25px;
                                 top: 0;
                                 background: rgba(0, 62, 81, 1);
                                 transform: rotate(45deg);
@@ -169,6 +167,7 @@
                             }
 
                             &:before {
+                                width: 25px;
                                 bottom: 0;
                                 background: rgba(0, 62, 81, 1);
                                 transform: rotate(-45deg);
@@ -191,7 +190,7 @@
                     height: 100vh;
                     position: absolute;
                     top: 0;
-                    padding-top: 150px;
+                    padding-top: 90px;
                     padding-left: 15px;
                     background-color: rgba(217, 217, 214, .8);
 
@@ -201,12 +200,12 @@
 
                         .list-menu {
                             list-style: none;
-                            margin-bottom: 2rem;
+                            margin-bottom: 1.25rem;
 
                             a {
                                 padding: .5rem 1rem;
-                                font-size: 26px;
-                                line-height: 32px;
+                                font-size: 1.25rem; //20
+                                line-height: 1.625rem; //26
                                 color: $color-primary;
                                 text-decoration: none;
                                 font-weight: $weight-semibold;
@@ -228,7 +227,7 @@
                                         margin-bottom: 1rem;
 
                                         a {
-                                            font-size: 22px;
+                                            font-size: 1.125rem; //18
                                             color: $color-primary;
                                         }
 
