@@ -1,12 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "สินค้า";
+    ViewData["Title"] = "สินค้า - GPS";
 }
 
 <div class="section section--product">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="title--section fw-semibold mb-5">สินค้า</h1>
+                <h1 class="title--section fw-semibold mb-3 mb-md-5">สินค้า - GPS</h1>
             </div>
         </div>
         <div class="row">
@@ -15,12 +15,15 @@
                     <div class="card--item shadow">
                         <div class="card--front">
                             <div class="card-image">
+                                <div class="icon-certifiticate">
+                                    <img src="~/images/icons/icon-certificate.png" alt="icon"/>
+                                </div>
                                 <img src="~/images/img-product.png" alt="image-product" />
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">Temperature Sensor</div>
-                                    <div class="name name__th">อุปกรณ์ตรวจวัดอุณหภูมิ</div>
+                                    <div class="name name__en fw-semibold">Magnetic Stripe Card Reader</div>
+                                    <div class="name name__th">เครื่องอ่านบัตรแถบแม่เหล็ก</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -34,18 +37,84 @@
                             <div class="card-body">
                                 <div class="content-body">
                                     <div class="name-body">
-                                        <div class="name name__en fw-semibold">Temperature Sensor</div>
-                                        <div class="name name__th">อุปกรณ์ตรวจวัดอุณหภูมิ</div>
+                                        <div class="name name__en fw-semibold">Magnetic Stripe Card Reader</div>
+                                        <div class="name name__th">เครื่องอ่านบัตรแถบแม่เหล็ก</div>
                                     </div>
                                     <div class="desc-body">
-                                        ใช้สำหรับรถห้องเย็น และยังมีระบบแจ้งเตือนเมื่ออุณหภูมิสูงหรือต่ำกว่า ที่กำหนดโดยส่งข้อความเตือนผ่าน Real Time บน website, SMS หรืออีเมล
+                                        <ul>
+                                            <li>
+                                                <p>เพื่อตรวจสอบประเภทใบขับขี่ (เช่น ท.2, บ.2 ฯลฯ) ให้ตรงกับประเภทรถยนต์ ตามกรมการขนส่งทางบกกำหนด</p>
+                                            </li>
+                                            <li>
+                                                <p>ใช้บันทึกข้อมูลผู้ขับขี่ของรถแต่ละคันตามที่ได้รับมอบหมาย</p>
+                                            </li>
+                                            <li>
+                                                <p>สามารถตรวจสอบข้อมูลผู่ขับขี่ย้อนหลังในรายงานย้อนหลังได้</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn btn--outline hideDesc">
+                                    <div class="icon">
+                                        <i class="bi bi-arrow-left-short"></i>
+                                    </div>
+                                    <div class="text">ย้อนกลับ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-                                        เป็นรายงานที่แสดงข้อมูลการขับรถความเร็วเกินกำหนด โดยผู้ใช้งานสามารถดูได้ผ่านหน้าเว็บหรือดาวน์โหลดมาเพื่อแสดงเป็น PDF หรือ EXCEL ก็ได้ ซึ่งจะแสดงข้อมูลเป็นกราฟและตารางข้อมูลช่วงเวลาที่ขับรถความเร็วเกินกำหนด
-
-
-                                        เป็นรายงานที่แสดงข้อมูลการขับรถความเร็วเกินกำหนด โดยผู้ใช้งานสามารถดูได้ผ่านหน้าเว็บหรือดาวน์โหลดมาเพื่อแสดงเป็น PDF หรือ EXCEL ก็ได้ ซึ่งจะแสดงข้อมูลเป็นกราฟและตารางข้อมูลช่วงเวลาที่ขับรถความเร็วเกินกำหนด
-
+                    <div class="card--item shadow">
+                        <div class="card--front">
+                            <div class="card-image">
+                                <img src="~/images/img-product.png" alt="image-product" />
+                            </div>
+                            <div class="card-body">
+                                <div class="name-body">
+                                    <div class="name name__en fw-semibold">Oil Sensor</div>
+                                    <div class="name name__th">เซ็นเซอร์วัดระดับน้ำมัน</div>
+                                </div>
+                                <div class="btn btn--outline showDesc">
+                                    <div class="text">รายละเอียด</div>
+                                    <div class="icon">
+                                        <i class="bi bi-arrow-right-short"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card--back">
+                            <div class="card-body">
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">Oil Sensor</div>
+                                        <div class="name name__th">เซ็นเซอร์วัดระดับน้ำมัน</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>ติดตามการลดระดับของน้ำมันที่สัมพันธ์กับการใช้งานจริง</p>
+                                            </li>
+                                            <li>
+                                                <p>สามารถตรวจสอบได้เมื่อถูกโจรกรรมน้ำมัน</p>
+                                            </li>
+                                            <li>
+                                                <p>มีรายงานการลดย้อนหลังทั้งในรูปแบบกราฟและจำนวนลิตร</p>
+                                            </li>
+                                            <li>
+                                                <p>ใช้ข้อมูลจากรายงานในการคิดคำนวณต้นทุนของบริษัทได้</p>
+                                            </li>
+                                            <li>
+                                                <p>ให้บริการ 2 รุ่น</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>Standard Oil Sensor - ตรวจสอบจับค่าไฟจากลูกลอย</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Ultrasonic Oil Sensor - ตรวจวัดระดับจากคลื่นเสียง</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
@@ -66,7 +135,7 @@
                             <div class="card-body">
                                 <div class="name-body">
                                     <div class="name name__en fw-semibold">Speed Alert</div>
-                                    <div class="name name__th">ระบบแจ้งเตือนความเร็ว</div>
+                                    <div class="name name__th">อุปกรณ์แจ้งเตือนความเร็ว</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -81,48 +150,21 @@
                                 <div class="content-body">
                                     <div class="name-body">
                                         <div class="name name__en fw-semibold">Speed Alert</div>
-                                        <div class="name name__th">ระบบแจ้งเตือนความเร็ว</div>
+                                        <div class="name name__th">อุปกรณ์แจ้งเตือนความเร็ว</div>
                                     </div>
                                     <div class="desc-body">
-                                        เป็นอุปกรณ์ใช้แจ้งเตือนคนขับเมื่อขับรถเร็วเกินกว่ากำหนด
+                                        <ul>
+                                            <li>
+                                                <p>ส่งเสียงเตือนพร้อมไฟกระพริบเมื่อทำความเร็วเกินกำหนด</p>
+                                            </li>
+                                            <li>
+                                                <p>ผู้ประกอบการสามารถกำหนดความเร็วตามมาตรการของบริษัทได้ โดยให้สอดคล้องกับที่กฎหมายกำหนด</p>
+                                            </li>
+                                            <li>
+                                                <p>ช่วยแจ้งเตือนเพื่อลดอัตรการเกิดอุบัติเหตุและเพื่อป้องกันการสูญเสียของบุคคลและทรัพย์สินขององค์กร</p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="btn btn--outline hideDesc">
-                                    <div class="icon">
-                                        <i class="bi bi-arrow-left-short"></i>
-                                    </div>
-                                    <div class="text">ย้อนกลับ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card--item shadow">
-                        <div class="card--front">
-                            <div class="card-image">
-                                <img src="~/images/img-product.png" alt="image-product" />
-                            </div>
-                            <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Smart Card</div>
-                                    <div class="name name__th">เครื่องรูดบัตร smart card</div>
-                                </div>
-                                <div class="btn btn--outline showDesc">
-                                    <div class="text">รายละเอียด</div>
-                                    <div class="icon">
-                                        <i class="bi bi-arrow-right-short"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card--back">
-                            <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Smart Card</div>
-                                    <div class="name name__th">เครื่องรูดบัตร smart card</div>
-                                </div>
-                                <div class="desc-body">
-                                    เป็นชุดอุปกรณ์ที่ใช้แจ้งเตือนเมื่อมีความเร็วเกินกำหนด ซึ่งจะมีเสียงแจ้งเตือนคนขับและมีข้อความแสดงบนหน้าเว็บไซต์และบนแอพพลิเคชั่นของมือถือ
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -142,8 +184,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">DVR Camera</div>
-                                    <div class="name name__th">กล้องบันทึกภาพ</div>
+                                    <div class="name name__en fw-semibold">Fuel Door Release Knob Sensor</div>
+                                    <div class="name name__th">เซ็นเซอร์มือดึงฝาถังน้ำมัน</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -155,12 +197,30 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">DVR Camera</div>
-                                    <div class="name name__th">กล้องบันทึกภาพ</div>
-                                </div>
-                                <div class="desc-body">
-                                    สามารถบันทึกภาพและเสียงรวมถึงพิกัดที่รถวิ่งได้ กำหนดทิศทางในการบันทึกได้ทั้งด้านหน้าด้านหลังและด้านข้าง โดยผ่านทางระบบ 3G Real Time
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">Fuel Door Release Knob Sensor</div>
+                                        <div class="name name__th">เซ็นเซอร์มือดึงฝาถังน้ำมัน</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>เซ็นเซอร์ตรวจจับการเปิดฝาถังน้ำมัน</p>
+                                            </li>
+                                            <li>
+                                                <p>สามารถตรวจสอบตำแหน่งในการเปิดฝาถังแบบ Real-time</p>
+                                            </li>
+                                            <li>
+                                                <p>มีตำแหน่ง วัน เวลา พิกัดละติจูด ลองติจูดระบุในแจ้งเตือน</p>
+                                            </li>
+                                            <li>
+                                                <p>แจ้งเตือนผ่านระบบเว็บไซต์ แอปพลิเคชั่น และ Line Alert</p>
+                                            </li>
+                                            <li>
+                                                <p>ใช้ป้องกันและตรวจสอบการโจรกรรมน้ำมัน</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -179,8 +239,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">Emergency Button</div>
-                                    <div class="name name__th">ปุ่มฉุกเฉิน</div>
+                                    <div class="name name__en fw-semibold">Temperature Sensor</div>
+                                    <div class="name name__th">ชุดอุปกรณ์ตรวจจับอุณหภูมิ</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -192,12 +252,24 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Emergency Button</div>
-                                    <div class="name name__th">ปุ่มฉุกเฉิน</div>
-                                </div>
-                                <div class="desc-body">
-                                    ใช้ในกรณีฉุกเฉินโดยเมื่อผู้ขับขี่กดปุ่มระบบจะทำการส่งข้อความขอความช่วยเหลือ(SOS)ไปยังเบอร์โทรศัพท์มือถือที่เรากำหนดไว้
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">Temperature Sensor</div>
+                                        <div class="name name__th">ชุดอุปกรณ์ตรวจจับอุณหภูมิ</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>ระบบตรวจจับอุณหภูมิาหรับรถขนส่งที่ต้องการควบคุมอุณหภูมิเพื่อรักษาคุณภาพของสินค้าง</p>
+                                            </li>
+                                            <li>
+                                                <p>ตรวจจับอุณหภูมิได้มากสุด 3 จุด/ชุดอุปกรณ์</p>
+                                            </li>
+                                            <li>
+                                                <p>มีจอแสดงผลติดตั้งถายในห้องโดยสาร เพื่อให้ติดตามอุณหภูมิปัจจุบันได้</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -208,6 +280,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <div class="card--item shadow">
                         <div class="card--front">
@@ -217,7 +290,7 @@
                             <div class="card-body">
                                 <div class="name-body">
                                     <div class="name name__en fw-semibold">Door Sensor</div>
-                                    <div class="name name__th">เซ็นเซอร์ประตู</div>
+                                    <div class="name name__th">เซ็นเซอร์ตรวจจับสถานะการเปิด-ปิดประตูของตู้สินค้า</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -229,12 +302,33 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Door Sensor</div>
-                                    <div class="name name__th">เซ็นเซอร์ประตู</div>
-                                </div>
-                                <div class="desc-body">
-                                    อุปกรณ์ตรวจการเปิด-ปิดของประตูรถและสามารถแจ้งเตือนผ่าน อีเมล์และ SMS บนมือถือได้
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">Door Sensor</div>
+                                        <div class="name name__th">เซ็นเซอร์ตรวจจับสถานะการเปิด-ปิดประตูของตู้สินค้า</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>อุปกรณ์ติดตามสถานะการเปิด-ปิดประตู</p>
+                                            </li>
+                                            <li>
+                                                <p>รายงานสถานะทันทีเมื่อมีการเปิด-ปิดประตู</p>
+                                            </li>
+                                            <li>
+                                                <p>สามารถตรวจสอบตำแหน่งในการเปิด-ปิดได้อย่างทันท่วงที</p>
+                                            </li>
+                                            <li>
+                                                <p>มีตำแหน่ง วัน เวลา พิกัดละติจูด ลองติดจดระบุในแจ้งเตือน</p>
+                                            </li>
+                                            <li>
+                                                <p>แจ้งเตือนผ่านระบบเว็บไซต์ แอปพลิเคชั่น และ Line Alert</p>
+                                            </li>
+                                            <li>
+                                                <p>ใช้ป้องกันและตรวจสอบกรณีสินค้าสูญหาย</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -255,8 +349,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">One way Communication</div>
-                                    <div class="name name__th">ระบบสื่อสารทางเดียว</div>
+                                    <div class="name name__en fw-semibold">Emergency Button</div>
+                                    <div class="name name__th">สวิตช์ฉุกเฉิน SOS</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -268,12 +362,24 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">One way Communication</div>
-                                    <div class="name name__th">ระบบสื่อสารทางเดียว</div>
-                                </div>
-                                <div class="desc-body">
-                                    ระบบที่ทำให้บุคคลที่เกี่ยวข้องภายนอกสามารถฟังการสนทนาภายในห้องโดยสาร โดยที่ผู้ขับไม่สามารถสนทนาโต้ตอบกลับได้
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">Emergency Button</div>
+                                        <div class="name name__th">สวิตช์ฉุกเฉิน SOS</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>แจ้งห้องควบคุมทันที่เมื่อกดสวิตช์  SOS โดยแจ้งเตือนผ่านทางระบบติดตามทางเว็บไต์ แอปพลิเครชั่น และแจ้งเตือนผ่าน Line Alert</p>
+                                            </li>
+                                            <li>
+                                                <p>สามารถช่วยประสานงานด้านช่วยเหลือได้อย่างทันท่วงที</p>
+                                            </li>
+                                            <li>
+                                                <p>เพื่อเพิ่มประสิทธิภาพการทำงานที่ดีที่สุด ควรใช้คู่กับอุปกรณ์สื่อสารโต้ตอบ (1/2 way communication)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -292,8 +398,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">Two way Communication</div>
-                                    <div class="name name__th">ระบบสื่อสารสองทาง</div>
+                                    <div class="name name__en fw-semibold">Two-Way Communication</div>
+                                    <div class="name name__th">อุปกรณ์สนทนาโต้ตอบ</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -305,12 +411,24 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Two way Communication</div>
-                                    <div class="name name__th">ระบบสื่อสารสองทาง</div>
-                                </div>
-                                <div class="desc-body">
-                                    เป็นระบบที่บุคคลที่เกี่ยวข้องสามารถติดต่อสื่อสารกับบุคคลที่อยู่ในห้องขังได้
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">Two-Way Communication</div>
+                                        <div class="name name__th">อุปกรณ์สนทนาโต้ตอบ</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>เพิ่มประสิทธิภาพการติดต่อกับพนักงานขับรถด้วยอุปกรณ์สนทนาโต้ตอบที่ปลายสายจะเป็นการรับสายโดยอัตโนมัติ</p>
+                                            </li>
+                                            <li>
+                                                <p>ติดต่อสื่อวานผ่านกล่อง GPS</p>
+                                            </li>
+                                            <li>
+                                                <p>เพื่อประโยชน์สูงสุด เมื่อใช้ควบคู่กับสวิตช์ฉุกเฉิน (SOS)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -329,8 +447,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">เครื่องอุปกรณ์สั่งตัดคันเร่งรถยนต์</div>
-                                    <div class="name name__th">-</div>
+                                    <div class="name name__en fw-semibold">OBD (Odometer) Integration</div>
+                                    <div class="name name__th">อุปกรณ์ติดตามทริป</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -342,12 +460,24 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">เครื่องอุปกรณ์สั่งตัดคันเร่งรถยนต์</div>
-                                    <div class="name name__th">-</div>
-                                </div>
-                                <div class="desc-body">
-                                    ตัดคันเร่งไม่ให้รถสามารถเคลื่อนที่ไปที่อื่นได้
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">OBD (Odometer) Integration</div>
+                                        <div class="name name__th">อุปกรณ์ติดตามทริป</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>ติดตามระยะทางการใช้งานรถตามจริงได้อย่างแม่นยำ</p>
+                                            </li>
+                                            <li>
+                                                <p>อ่านและบันทึกมาตรวัดระยะทางตั้งแต่จุดเริ่มต้น จุดจอดแต่ละจุดจนถึงจุดสิ้นสุดการเดินทาง</p>
+                                            </li>
+                                            <li>
+                                                <p>มีประโยชน์ในการคิดคำนวณต้นทุน</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -367,8 +497,8 @@
                             </div>
                             <div class="card-body">
                                 <div class="name-body">
-                                    <div class="name name__en fw-semibold">Kratos Website</div>
-                                    <div class="name name__th">ระบบใช้งานบนเว็บ</div>
+                                    <div class="name name__en fw-semibold">RFID (RFID Ignition Control System)</div>
+                                    <div class="name name__th">ระบบควบคุมการติดเครื่องยนต์</div>
                                 </div>
                                 <div class="btn btn--outline showDesc">
                                     <div class="text">รายละเอียด</div>
@@ -380,12 +510,21 @@
                         </div>
                         <div class="card--back">
                             <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Kratos Website</div>
-                                    <div class="name name__th">ระบบใช้งานบนเว็บ</div>
-                                </div>
-                                <div class="desc-body">
-                                    การใช้งานบนคอมพิวเตอร์ Desktop ซึ่งจะแสดงข้อมูลและผู้ใช้สามารถแก้ไขข้อมูลได้
+                                <div class="content-body">
+                                    <div class="name-body">
+                                        <div class="name name__en fw-semibold">RFID (RFID Ignition Control System)</div>
+                                        <div class="name name__th">ระบบควบคุมการติดเครื่องยนต์</div>
+                                    </div>
+                                    <div class="desc-body">
+                                        <ul>
+                                            <li>
+                                                <p>ใช้สำหรับการระบุตัวตนก่อนติดเครื่องยนต์ โดยจะต้องใช้ควบคู่กับ smart card เพื่อยืนยันก่อนติดเครื่องยนต์</p>
+                                            </li>
+                                            <li>
+                                                <p>สามารถป้องกันการใช้รถโดยไม่ได้รับอนุญาตได้</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="btn btn--outline hideDesc">
                                     <div class="icon">
@@ -396,85 +535,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="card--item shadow">
-                        <div class="card--front">
-                            <div class="card-image">
-                                <img src="~/images/img-product.png" alt="image-product" />
-                            </div>
-                            <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Map System</div>
-                                    <div class="name name__th">ระบบแผนที่</div>
-                                </div>
-                                <div class="btn btn--outline showDesc">
-                                    <div class="text">รายละเอียด</div>
-                                    <div class="icon">
-                                        <i class="bi bi-arrow-right-short"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card--back">
-                            <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Map System</div>
-                                    <div class="name name__th">ระบบแผนที่</div>
-                                </div>
-                                <div class="desc-body">
-                                    ระบบแผนที่ที่สามารถดูได้ทั้งแบบปกติและแบบแผนที่ ซึ่งระบบสามารถให้ผู้ใช้สามารถสร้างโซน เส้นทางและสถานที่ได้โดยง่าย
-                                </div>
-                                <div class="btn btn--outline hideDesc">
-                                    <div class="icon">
-                                        <i class="bi bi-arrow-left-short"></i>
-                                    </div>
-                                    <div class="text">ย้อนกลับ</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card--item shadow">
-                        <div class="card--front">
-                            <div class="card-image">
-                                <img src="~/images/img-product.png" alt="image-product" />
-                            </div>
-                            <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Speeding Report</div>
-                                    <div class="name name__th">รายงานการใช้ความเร็วเกินกำหนด</div>
-                                </div>
-                                <div class="btn btn--outline showDesc">
-                                    <div class="text">รายละเอียด</div>
-                                    <div class="icon">
-                                        <i class="bi bi-arrow-right-short"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card--back">
-                            <div class="card-body">
-                                <div class="name-body">
-                                    <div class="name name__en fw-semibold">Speeding Report</div>
-                                    <div class="name name__th">รายงานการใช้ความเร็วเกินกำหนด</div>
-                                </div>
-                                <div class="desc-body">
-                                    เป็นรายงานที่แสดงข้อมูลการขับรถความเร็วเกินกำหนด โดยผู้ใช้งานสามารถดูได้ผ่านหน้าเว็บหรือดาวน์โหลดมาเพื่อแสดงเป็น PDF หรือ EXCEL ก็ได้ ซึ่งจะแสดงข้อมูลเป็นกราฟและตารางข้อมูลช่วงเวลาที่ขับรถความเร็วเกินกำหนด
-                                </div>
-                                <div class="btn btn--outline hideDesc">
-                                    <div class="icon">
-                                        <i class="bi bi-arrow-left-short"></i>
-                                    </div>
-                                    <div class="text">ย้อนกลับ</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
         </div>
-
     </div>
 </div>

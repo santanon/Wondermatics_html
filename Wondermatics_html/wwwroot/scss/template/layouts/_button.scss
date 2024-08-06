@@ -19,4 +19,16 @@
             display: flex;
         }
     }
+
+    &--primary{
+        background-color: $color-primary;
+        color: white;
+        height: 60px;
+        &:hover{
+            background-color: $color-secondary;
+            color: white;
+        }
+    }
 }
+
+
