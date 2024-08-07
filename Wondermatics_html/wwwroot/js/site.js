@@ -13,6 +13,8 @@
 
 $(document).ready(function () {
 
+
+
     //$('#noti_Modal').modal('show');
 
     $('.hamburger-menu').on('click', function () {
@@ -42,16 +44,16 @@ $(document).ready(function () {
         $(this).closest('.card--item').find('.card--back').removeClass('show');
     });
 
-    $(window).on("scroll", function () {
-        if ($(this).scrollTop() > 120) {
-            $('.gototop').css('display','flex');
-        } else {
-            $('.gototop').hide();
-        }
-    });
-    $('.gototop').click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 100);
-    });
+    //$(window).on("scroll", function () {
+    //    if ($(this).scrollTop() > 120) {
+    //        $('.gototop').css('display','flex');
+    //    } else {
+    //        $('.gototop').hide();
+    //    }
+    //});
+    //$('.gototop').click(function () {
+    //    $("html, body").animate({ scrollTop: 0 }, 100);
+    //});
 
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
