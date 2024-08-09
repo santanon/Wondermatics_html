@@ -49,7 +49,7 @@
                         height: 100px;
 
                         &.active {
-                            top: 95px;
+                            top: 95px !important;
                         }
                     }
                 }
@@ -68,6 +68,7 @@
     .menulang--wrapper {
         display: flex;
         align-items: center;
+
         .menu--outer {
             .menu-wrapper {
 
@@ -234,6 +235,46 @@
                             padding-left: 15px;
                             background-color: rgba(217, 217, 214, .8);
 
+                            .lang-md {
+                                position: relative;
+                                padding: 0 1rem;
+
+                                ul {
+                                    margin: 0;
+                                    padding: 0;
+                                    display: flex;
+
+                                    li {
+                                        list-style: none;
+                                        margin-right: 2rem;
+                                        margin-bottom: 2rem;
+                                    }
+
+                                    .icon-lang {
+                                        a{
+                                            display: flex;
+                                            text-decoration: none;
+                                            color: $color-primary;
+                                        }
+
+                                        .icon {
+                                            width: 25px;
+                                            height: 25px;
+                                            margin-right: 1rem;
+
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+
+                                        span {
+                                            font-size: 1.25rem;
+                                            font-weight: $weight-regular;
+                                        }
+                                    }
+                                }
+                            }
+
                             ul {
                                 margin: 0;
                                 padding: 0;
@@ -293,47 +334,74 @@
                 }
             }
         }
-        .lang{
+
+        .lang {
             display: flex;
             align-items: center;
-
             margin-left: 1rem;
             padding-left: 1.5rem;
             border-left: 2px solid white;
-            .icon-logo{
+
+            .icon-logo {
                 width: 30px;
                 height: 30px;
                 overflow: hidden;
                 margin-right: 1rem;
-                img{
+
+                img {
                     max-width: 100%;
                     width: 100%;
                 }
             }
-            .selectLange{
+
+            .selectLange {
                 background-color: inherit;
                 border: none;
                 width: 55px;
                 color: white;
                 cursor: pointer;
-                option{
+
+                option {
                     color: #000;
                 }
-                &:focus{
+
+                &:focus {
                     outline: none;
                 }
+            }
+
+            @media (max-width: 1199.98px) {
+                display: none;
             }
         }
     }
 
     @media (max-width: 1199.98px) {
-        .menu-wrapper {
-            &__md {
-                .menu--nav {
-                    ul {
-                        .list-menu {
-                            &:last-child {
-                                display: none;
+        &.sticky {
+            .menulang--wrapper {
+                .menu--outer{
+                    .menu-wrapper{
+                        &__md{
+                            .hamburger-menu{
+                                top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .menulang--wrapper {
+            .menu--outer {
+                .menu-wrapper {
+                    &__md {
+                        .menu--nav {
+                            ul {
+                                .list-menu {
+                                    &:last-child {
+                                        display: none;
+                                    }
+                                }
                             }
                         }
                     }
@@ -349,10 +417,14 @@
             max-width: 170px;
         }
 
-        .menu-wrapper {
-            &__md {
-                .hamburger-menu {
-                    top: 20px;
+        .menulang--wrapper {
+            .menu--outer {
+                .menu-wrapper {
+                    &__md {
+                        .hamburger-menu {
+                            top: 20px;
+                        }
+                    }
                 }
             }
         }

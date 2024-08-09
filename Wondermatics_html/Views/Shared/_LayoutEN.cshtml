@@ -10,16 +10,16 @@
 </head>
 <body>
     
-    @(await Component.InvokeAsync("HeaderPrimary"))
+    @(await Component.InvokeAsync("HeaderPrimaryEng"))
 
-    <main role="main" class="main-wrapper pb-3">
+    <main role="main" class="main-wrapper main-wrapper__en pb-3">
 
         @RenderBody()
 
         <div class="backdrop hide"></div>
     </main>
 
-    @(await Component.InvokeAsync("FooterPrimary"))
+    @(await Component.InvokeAsync("FooterPrimaryEng"))
 
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -4,6 +4,7 @@ using Wondermatics_html.Models;
 
 namespace Wondermatics_html.Controllers
 {
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -17,8 +18,7 @@ namespace Wondermatics_html.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult IndexEN()
         {
             return View();
         }

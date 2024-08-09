@@ -53,7 +53,7 @@
   height: 100px;
 }
 .header--wrapper.sticky .menu-wrapper ul li .submenu--wrapper.active {
-  top: 95px;
+  top: 95px !important;
 }
 @media (max-width: 1199.98px) {
   .header--wrapper.sticky .menu-wrapper__md .hamburger-menu {
@@ -203,6 +203,37 @@
     padding-left: 15px;
     background-color: rgba(217, 217, 214, 0.8);
   }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md {
+    position: relative;
+    padding: 0 1rem;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md ul li {
+    list-style: none;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md ul .icon-lang a {
+    display: flex;
+    text-decoration: none;
+    color: #003e51;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md ul .icon-lang .icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md ul .icon-lang .icon img {
+    width: 100%;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav .lang-md ul .icon-lang span {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
   .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav ul {
     margin: 0;
     padding: 0;
@@ -279,7 +310,15 @@
   outline: none;
 }
 @media (max-width: 1199.98px) {
-  .header--wrapper .menu-wrapper__md .menu--nav ul .list-menu:last-child {
+  .header--wrapper .menulang--wrapper .lang {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .header--wrapper.sticky .menulang--wrapper .menu--outer .menu-wrapper__md .hamburger-menu {
+    top: 20px;
+  }
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .menu--nav ul .list-menu:last-child {
     display: none;
   }
 }
@@ -290,7 +329,7 @@
   .header--wrapper .logo {
     max-width: 170px;
   }
-  .header--wrapper .menu-wrapper__md .hamburger-menu {
+  .header--wrapper .menulang--wrapper .menu--outer .menu-wrapper__md .hamburger-menu {
     top: 20px;
   }
 }
