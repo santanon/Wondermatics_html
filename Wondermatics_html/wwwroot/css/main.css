@@ -830,6 +830,8 @@
 
 .modal-custom .modal-dialog .modal-content {
   position: relative;
+  background-color: inherit;
+  border: none;
 }
 .modal-custom .modal-dialog .modal-content .modal-header {
   width: 40px;
@@ -852,8 +854,25 @@
   height: 100%;
   color: white;
 }
+.modal-custom .modal-dialog .modal-content .modal-body {
+  background-color: white;
+}
 .modal-custom .modal-dialog .modal-content .modal-body .image-banner img {
   width: 100%;
+}
+.modal-custom .modal-dialog .modal-content .modal-chk {
+  margin-top: 1rem;
+}
+.modal-custom .modal-dialog .modal-content .modal-chk .form-check .form-check-input {
+  box-shadow: none;
+  border: none;
+}
+.modal-custom .modal-dialog .modal-content .modal-chk .form-check .form-check-input:checked {
+  background-color: #003e51;
+}
+.modal-custom .modal-dialog .modal-content .modal-chk .form-check .form-check-label {
+  color: white;
+  font-size: 1.125rem;
 }
 
 .tab--wrapper .nav-tabs {

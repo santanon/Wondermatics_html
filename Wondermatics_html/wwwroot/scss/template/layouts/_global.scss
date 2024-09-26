@@ -481,6 +481,8 @@
     .modal-dialog{
         .modal-content{
             position: relative;
+            background-color: inherit;
+            border: none;
             .modal-header{
                 width: 40px;
                 height: 40px;
@@ -503,9 +505,26 @@
                 }
             }
             .modal-body{
+                background-color: white;
                 .image-banner{
                     img{
                         width: 100%;
+                    }
+                }
+            }
+            .modal-chk{
+                margin-top: 1rem;
+                .form-check{
+                    .form-check-input{
+                        box-shadow: none;
+                        border: none;
+                        &:checked{
+                            background-color: $color-primary;
+                        }
+                    }
+                    .form-check-label{
+                        color: white;
+                        font-size: 1.125rem;
                     }
                 }
             }

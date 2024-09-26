@@ -13,22 +13,45 @@
 
 $(document).ready(function () {
 
-    //Image Banner Modal
-    $('.image-banner img').each(function () {
-        var img = $(this);
-        var imgSrc = img.attr('src');
-        console.log(imgSrc);
+    var cookieValue = Cookies.get('hideModalForToday');
 
-        $.ajax({
-            url: imgSrc,
-            type: 'HEAD',
-            error: function () {
-                $('#noti_Modal').modal('hide');
-            },
-            success: function () {
-                $('#noti_Modal').modal('show');
-            }
+    if (cookieValue === 'true') {
+        // ถ้า cookie ถูกตั้งค่าให้ซ่อน modal
+        var modalElement = document.getElementById('noti_Modal');
+        var modalInstance = new bootstrap.Modal(modalElement);
+        modalInstance.hide();  // ซ่อน modal
+    } else {
+        // ถ้า cookie ไม่ถูกตั้งค่า, ตรวจสอบรูปภาพ
+        $('.image-banner img').each(function () {
+            var img = $(this);
+            var imgSrc = img.attr('src');
+            console.log(imgSrc);
+
+            $.ajax({
+                url: imgSrc,
+                type: 'HEAD',
+                error: function () {
+                    var modalElement = document.getElementById('noti_Modal');
+                    var modalInstance = new bootstrap.Modal(modalElement);
+                    modalInstance.hide();  // ซ่อน modal ถ้ารูปภาพไม่โหลด
+                },
+                success: function () {
+                    var modalElement = document.getElementById('noti_Modal');
+                    var modalInstance = new bootstrap.Modal(modalElement);
+                    modalInstance.show();  // แสดง modal ถ้ารูปภาพโหลดได้
+                }
+            });
         });
+    }
+    // การตั้งค่า cookie เมื่อ checkbox ถูกติ๊ก
+    $('#CheckModal').on('change', function () {
+        if (this.checked) {
+            var now = new Date();
+            var midnight = new Date(now.setHours(23, 59, 59, 999));  // หมดอายุเมื่อจบวัน
+            Cookies.set('hideModalForToday', 'true', { expires: midnight });
+        } else {
+            Cookies.set('hideModalForToday', 'false');
+        }
     });
 
 
